@@ -47,7 +47,7 @@ More works coming soon.
 
 # 📄 Resume | 简历下载
 
-[Download CV (PDF)](./Xingyu_Gao_CV.pdf)  
-[点击下载我的简历](./Xingyu_Gao_CV.pdf)
+<a href="/Xingyu_Gao_CV.pdf" download>📄 Download My CV (PDF)</a>  
+<a href="/Xingyu_Gao_CV.pdf" download>📄 点击下载我的简历（PDF）</a>
 
 
