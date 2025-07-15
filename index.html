@@ -1,21 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Xingyu Gao</title>
+  <meta charset="UTF-8" />
+  <title>Xingyu Gao - Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background: #fff;
+      color: #111;
+    }
+    h1, h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .project-thumb {
+      width: 30%;
+      cursor: pointer;
+    }
+    .project-thumb img {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 700px; margin: auto; padding: 2rem;">
-  <h1>👋 About Me | 关于我</h1>
-  <p>I’m Xingyu Gao (高星宇), a postgraduate student in Creative Computing at UAL.</p>
-  <p>我目前就读于伦敦艺术大学 Creative Computing 硕士项目。</p>
+<body>
 
-  <h2>📄 Resume | 简历下载</h2>
-  <p>
-    <a href="Xingyu_Gao_CV.pdf" download>Download My CV (PDF)</a><br>
-    <a href="Xingyu_Gao_CV.pdf" download>点击下载我的简历</a>
-  </p>
+  <h1>Xingyu Gao's Portfolio Website</h1>
 
-  <h2>📂 Portfolio (Coming Soon)</h2>
-  <p>作品展示即将上线。</p>
+  <div class="section">
+    <h2>👋 About Me | 关于我</h2>
+    <p>
+      I’m <strong>Xingyu Gao</strong>, an MSc Creative Computing student at University of the Arts London (UAL).  
+      My interests lie in HCI, multisensory interaction, accessibility, and immersive systems.
+    </p>
+    <p>
+      我是高星宇，现就读于伦敦艺术大学 Creative Computing 硕士项目，研究方向包括人机交互、多模态感官交互、可达性与沉浸式体验系统。
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>🎓 Education | 教育经历</h2>
+    <ul>
+      <li>MSc Creative Computing, University of the Arts London, 2024–2025</li>
+      <li>BEng in Industrial Design, Beihang University, 2018–2022</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📰 News | 正在参与的研究</h2>
+    <ul>
+      <li>HCIX 2025: Physical HRI & Physiological Feedback</li>
+      <li>Scent-Based Puzzle Game using Unity + Arduino (early prototyping)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎨 Portfolio | 作品集</h2>
+    <div class="portfolio-grid">
+      <!-- 示例1：跳转作品图集页（你准备好的静态图页面） -->
+      <div class="project-thumb">
+        <a href="works/deaf_dancer.html">
+          <img src="covers/deaf_dancer_thumb.jpg" alt="Deaf Dancer Wearable" />
+        </a>
+      </div>
+
+      <!-- 示例2：跳转到 GitHub 花粉项目 -->
+      <div class="project-thumb">
+        <a href="https://github.com/XingyuGao-dudu/Pollen-EduGame" target="_blank">
+          <img src="covers/pollen_game_thumb.jpg" alt="Pollen Game" />
+        </a>
+      </div>
+
+      <!-- 示例3：跳转到 AI + P5.js 网站作品 GitHub -->
+      <div class="project-thumb">
+        <a href="https://github.com/XingyuGao-dudu/AI-p5-visual-music" target="_blank">
+          <img src="covers/ai_p5_thumb.jpg" alt="AI Visual Music Site" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📄 Resume | 简历下载</h2>
+    <a class="button" href="Xingyu_Gao_CV.pdf" download>Download My CV (PDF)</a>
+  </div>
+
+  <div class="section">
+    <h2>🏆 Awards | 获奖经历</h2>
+    <ul>
+      <li>Pitch It 2025 – First Prize, University of the Arts London</li>
+      <li>China Collegiate Computing Design Competition – National Award</li>
+      <li>UXDA National User Experience Design Competition – Award</li>
+      <li>Additional international/national awards and scholarships (available upon request)</li>
+    </ul>
+  </div>
+
 </body>
 </html>
