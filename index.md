@@ -48,6 +48,6 @@ More works coming soon.
 # 📄 Resume | 简历下载
 
 [Download CV (PDF)](https://xingyugao.github.io/Xingyu_Gao_CV.pdf)
-<a href="/Xingyu_Gao_CV.pdf" download>📄 点击下载我的简历（PDF）</a>
+
 
 
