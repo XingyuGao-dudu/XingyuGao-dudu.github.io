@@ -69,6 +69,52 @@
   <img src="../assets/ai1/33333.png" alt="AI Music Animation 1">
   <img src="../assets/ai1/44444.png" alt="AI Music Animation 2">
 </div>
+  <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
+  <thead>
+    <tr style="background-color:#f5f1ff;">
+      <th style="border: 1px solid #ccc; padding: 8px; text-align:left;">File / Folder</th>
+      <th style="border: 1px solid #ccc; padding: 8px; text-align:left;">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>app.py</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Flask backend – handles frontend, emotion analysis, generation</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>generate_continuation.py</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Loads nanoGPT model & generates text continuations</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>index.html</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Web interface – scene display, letter input, result section</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>script.js</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Frontend logic – handles submission, response rendering</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>style.css</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Styling for chapter and letter scenes</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>story_scenes.json</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">JSON file with story scene data and character info</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>ckpt.pt</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Simulated trained nanoGPT checkpoint</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>vocab_stoi.json / vocab_itos.json</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Token index mapping for nanoGPT</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;"><code>static/img/</code></td>
+      <td style="border: 1px solid #ccc; padding: 8px;">Visual assets (backgrounds, UI elements, etc.)</td>
+    </tr>
+  </tbody>
+</table>
 <h2>Project Introduction</h2>
 <p>
 <strong>Rewrite Fate</strong> is a speculative interactive fiction experience combining AI-generated storytelling, emotional analysis, and narrative intervention—based on <em>Les Misérables</em>.
