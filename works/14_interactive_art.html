@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>14. Algorithmic & Interactive Art Experiments</title>
+  <title>14. Algorithmic & Communication Experiments</title>
   <style>
     body {
       font-family: sans-serif;
@@ -12,22 +12,23 @@
       line-height: 1.7;
       background-color: #fff;
       color: #111;
+      scroll-behavior: smooth;
     }
     h1 {
       font-size: 1.8rem;
       border-bottom: 1px solid #ccc;
       padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
     h2 {
       color: #6a3cb3;
       margin-top: 2rem;
     }
     h3 {
-      margin-top: 1.2rem;
       color: #333;
+      margin-top: 1rem;
     }
-    p {
+    p, li {
       margin-bottom: 1rem;
     }
     a {
@@ -36,6 +37,22 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .nav-buttons a {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0 0 8px rgba(180,138,255,0.5);
+      color: #6a3cb3;
+      font-weight: bold;
+    }
+    .nav-buttons a:hover {
+      background-color: #f5f1ff;
     }
     .gif-pair {
       display: flex;
@@ -56,57 +73,71 @@
       color: #111;
       text-decoration: none;
       border-radius: 4px;
-      box-shadow: 0 0 8px 0 rgba(180,138,255,0.5);
+      box-shadow: 0 0 8px rgba(180,138,255,0.5);
     }
   </style>
 </head>
 
 <body>
 
-<h1>14. Algorithmic & Interactive Art Experiments</h1>
+<h1>14. Algorithmic & Communication Experiments</h1>
 
-<h2>Ⅰ. Algorithmic Interactive Creations</h2>
+<!-- 🔗 顶部导航按钮 -->
+<div class="nav-buttons">
+  <a href="#algorithmic">Algorithmic Art</a>
+  <a href="#physical">Physical Interaction</a>
+</div>
+
+<!-- ========================= -->
+<!-- 🧠 算法艺术部分 -->
+<!-- ========================= -->
+<h2 id="algorithmic">Ⅰ. Algorithmic Art</h2>
 <p>
-This series explores how algorithmic principles (recursion, cellular automata, randomness, etc.) 
-can generate interactive art. Click the sketches below to experience each piece live.
+This section showcases a series of interactive visual works based on algorithmic design principles, 
+including recursion, cellular automata, and generative randomness.  
+Click the sketches to experience them directly.
 </p>
 
 <h3>Training 1 – Recursive Dandelion</h3>
 <p>
 <a href="https://editor.p5js.org/g18999255/sketches/XXXX1" target="_blank">▶ View Sketch</a><br>
 Inspired by dandelion fluff being blown away by the wind.  
-I used a recursive algorithm to simulate how the fluff scatters in the air, shrinking and changing direction.  
-Each fluff is created through recursion, forming a layered, spreading visual effect.
+A recursive algorithm simulates the scattering of fluff in the air, shrinking and redirecting over time, 
+revealing the layered randomness of natural motion.
 </p>
 
 <h3>Training 2 – Cyberpunk Game of Life</h3>
 <p>
 <a href="https://editor.p5js.org/g18999255/sketches/3F4TbUJhJ" target="_blank">▶ View Sketch</a><br>
-A modified version of the <em>Game of Life</em> with color aging, glowing cells, and mutation probability.  
-This creates a futuristic, cyberpunk-style digital ecosystem that evolves unpredictably.
+A reimagined *Game of Life* with color aging, glowing effects, and mutation probability, 
+forming a cyberpunk-style digital ecosystem that evolves unpredictably.
 </p>
 
 <h3>Training 3 – Flame Pattern Generator</h3>
 <p>
-<a href="https://editor.p5js.org/g18999255/sketches/gx0LTzNC3" target="_blank">▶ View Sketch #1</a><br>
-<a href="https://editor.p5js.org/g18999255/sketches/OEPYjQ3JE" target="_blank">▶ View Sketch #2</a><br>
-Two sketches exploring randomness and symmetry:  
-one creates flame-like forms; the other arranges them into a grid with rotation and scaling for a layered generative design.
+<a href="https://editor.p5js.org/g18999255/sketches/gx0LTzNC3" target="_blank">▶ Sketch #1</a><br>
+<a href="https://editor.p5js.org/g18999255/sketches/OEPYjQ3JE" target="_blank">▶ Sketch #2</a><br>
+Two generative sketches exploring randomness and grid composition.  
+The first creates flame-like visuals; the second arranges them in grids for compositional variety.
 </p>
 
 <h3>Training 4 – Poetic Generator (“Book of Songs”)</h3>
 <p>
 <a href="https://editor.p5js.org/g18999255/sketches/YYYY4" target="_blank">▶ View Sketch</a><br>
-Inspired by <em>Shijing: Min</em>, this generator produces short four-character poetic fragments reflecting emotional transitions.  
-Users click a button to get a random phrase, representing the shifting moments in an ancient woman’s life.
+Based on <em>Shijing: Min</em>.  
+Each random four-character phrase evokes emotional moments of ancient life, 
+allowing users to click and reveal fragments of shifting affection and fate.
 </p>
 
 <hr>
 
-<h2>Ⅱ. Physical Interaction Experiments</h2>
+<!-- ========================= -->
+<!-- 🔧 物理交互部分 -->
+<!-- ========================= -->
+<h2 id="physical">Ⅱ. Physical Interaction</h2>
 <p>
-This section includes small experiments combining physical interfaces (Leap Motion, accelerometers, Unity cross-platform interaction) 
-to explore embodied and multimodal interaction.
+These experiments combine sensors, motion tracking, and real-time visualization 
+to explore embodied interaction between human movement and computational expression.
 </p>
 
 <h3>Experiment 1 – Leap Motion Visual Control</h3>
@@ -115,8 +146,8 @@ to explore embodied and multimodal interaction.
   <img src="../assets/interactive_physical/leap2.gif" alt="Leap Motion Demo 2">
 </div>
 <p>
-A creative-coding demo where users control dynamic particle visuals using hand motion data captured via Leap Motion.  
-The experiment explores gestural embodiment and motion-sensing as aesthetic input.
+An experiment using Leap Motion to capture hand gestures that control visual particle systems.  
+This project explores gestural embodiment and motion-driven generative visuals.
 </p>
 
 <h3>Experiment 2 – Unity + Accelerometer Cross-Platform Test</h3>
@@ -125,12 +156,16 @@ The experiment explores gestural embodiment and motion-sensing as aesthetic inpu
   <img src="../assets/interactive_physical/unity2.gif" alt="Unity Sensor 2">
 </div>
 <p>
-This test connects Arduino sensor input (acceleration data) to Unity visual feedback.  
-It demonstrates real-time cross-platform interaction between physical sensors and 3D digital environments.<br>
+A cross-platform test connecting Arduino accelerometer input to Unity visual responses.  
+It demonstrates real-time communication between physical sensors and digital simulation environments.<br>
 <a href="https://drive.google.com/file/d/ZZZZZ/view?usp=sharing" target="_blank">📂 Full Materials Download</a>
 </p>
 
 <a class="back" href="../index.html">← Back to Home</a>
+
+</body>
+</html>
+
 
 </body>
 </html>
