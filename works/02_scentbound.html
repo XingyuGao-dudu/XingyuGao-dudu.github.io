@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02. Scentbound: An Olfactory VR Game</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.7;
+      background-color: #fff;
+      color: #111;
+    }
 
+    h1 {
+      font-size: 1.8rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: #6a3cb3;
+      margin-top: 2rem;
+    }
+
+    p,
+    li {
+      margin-bottom: 1rem;
+    }
+
+    img,
+    iframe {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      margin: 1rem 0;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #f3f3f3;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .gif-grid img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      margin: 0;
+      background: #f3f3f3;
+    }
+
+    .project-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+      background-color: #ffffff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 0 0 8px 0 rgba(180, 138, 255, 0.5),
+                  0 2px 4px 0 rgba(180, 138, 255, 0.4);
+    }
+
+    a {
+      color: #6a3cb3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 1.25rem;
+      }
+
+      .gif-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gif-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>02. Scentbound: An Olfactory VR Game</h1>
+
+<p><strong>Statement:</strong> This individual MSc final project at UAL combines speculative world-building, a playable VR game, a custom scent device, and an exploratory user study. I was responsible for the full process, including concept and interaction design, Unity development, Arduino hardware, study design, and analysis.</p>
+
+<h2>Project Demo</h2>
+<div class="video-wrapper">
+  <iframe
+    src="https://drive.google.com/file/d/1FD4dv2THoTk_TnZEx5YJHol53gQylrAH/preview"
+    title="Scentbound project demo"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<h2>Gameplay and Interaction</h2>
+<div class="gif-grid">
+  <img src="../assets/scentbound/01.gif" alt="Scentbound gameplay clip 1" loading="lazy">
+  <img src="../assets/scentbound/02.gif" alt="Scentbound gameplay clip 2" loading="lazy">
+  <img src="../assets/scentbound/03.gif" alt="Scentbound gameplay clip 3" loading="lazy">
+  <img src="../assets/scentbound/04.gif" alt="Scentbound gameplay clip 4" loading="lazy">
+  <img src="../assets/scentbound/05.gif" alt="Scentbound gameplay clip 5" loading="lazy">
+  <img src="../assets/scentbound/06.gif" alt="Scentbound gameplay clip 6" loading="lazy">
+  <img src="../assets/scentbound/07.gif" alt="Scentbound gameplay clip 7" loading="lazy">
+  <img src="../assets/scentbound/08.gif" alt="Scentbound gameplay clip 8" loading="lazy">
+  <img src="../assets/scentbound/09.gif" alt="Scentbound gameplay clip 9" loading="lazy">
+  <img src="../assets/scentbound/010.gif" alt="Scentbound gameplay clip 10" loading="lazy">
+  <img src="../assets/scentbound/011.gif" alt="Scentbound gameplay clip 11" loading="lazy">
+  <img src="../assets/scentbound/012.gif" alt="Scentbound gameplay clip 12" loading="lazy">
+</div>
+
+<h2>Project Development and Research</h2>
+<img class="project-image" src="../assets/scentbound/1.png" alt="Scentbound project documentation 1" loading="lazy">
+<img class="project-image" src="../assets/scentbound/2.png" alt="Scentbound project documentation 2" loading="lazy">
+<img class="project-image" src="../assets/scentbound/3.png" alt="Scentbound project documentation 3" loading="lazy">
+<img class="project-image" src="../assets/scentbound/4.png" alt="Scentbound project documentation 4" loading="lazy">
+<img class="project-image" src="../assets/scentbound/5.png" alt="Scentbound project documentation 5" loading="lazy">
+<img class="project-image" src="../assets/scentbound/6.png" alt="Scentbound project documentation 6" loading="lazy">
+<img class="project-image" src="../assets/scentbound/7.png" alt="Scentbound project documentation 7" loading="lazy">
+<img class="project-image" src="../assets/scentbound/8.png" alt="Scentbound project documentation 8" loading="lazy">
+<img class="project-image" src="../assets/scentbound/9.png" alt="Scentbound project documentation 9" loading="lazy">
+<img class="project-image" src="../assets/scentbound/10.png" alt="Scentbound project documentation 10" loading="lazy">
+<img class="project-image" src="../assets/scentbound/11.png" alt="Scentbound project documentation 11" loading="lazy">
+<img class="project-image" src="../assets/scentbound/12.png" alt="Scentbound project documentation 12" loading="lazy">
+<img class="project-image" src="../assets/scentbound/13.png" alt="Scentbound project documentation 13" loading="lazy">
+<img class="project-image" src="../assets/scentbound/14.png" alt="Scentbound project documentation 14" loading="lazy">
+
+<h2>Project Description</h2>
+<p>Scentbound is an olfactory VR game set in a speculative future where natural ecologies and natural smells have been replaced by artificial systems. The player takes the role of a researcher who enters reconstructed environments to collect scent samples, gradually uncovering how smell, memory, and access to nature have been commercialised and controlled.</p>
+<p>Rather than treating smell as an additional special effect, the project uses scent as part of the spatial atmosphere, narrative, and interaction. Three contrasting environments - a cyberpunk laboratory, a spring garden, and a frozen church - were designed to explore how different scents shape users' interpretations and emotional responses.</p>
+
+<h2>Technical Description</h2>
+<p>The project combines Unity, C#, Arduino, serial communication, and custom olfactory hardware. I developed the game environments and interaction logic in Unity and built a four-channel scent device using four independently controlled nebuliser modules. Unity sends serial commands to the Arduino so that different scenes and game events can trigger corresponding scent channels and combinations.</p>
+
+<h2>User Study</h2>
+<p>I conducted an exploratory scent-scene matching study with four participants. Participants first experienced 12 anonymised scents and selected those they associated with each virtual environment. They then rated selected scent-scene combinations in terms of perceived fit, emotional valence, arousal, and immersion, followed by short interviews about their choices. The results informed the final selection and configuration of scents used in the prototype.</p>
+
+<a class="back" href="../index.html">&larr; Back to Home</a>
+
+</body>
+</html>
